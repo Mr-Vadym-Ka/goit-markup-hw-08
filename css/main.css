@@ -89,6 +89,18 @@ body {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+
 .section {
   padding-bottom: 94px;
   padding-top: 94px;
@@ -565,6 +577,22 @@ body {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 480px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-image-mobile.jpg);
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-image-tab.jpg);
+    max-width: 100%;
+    height: auto;
+  }
+}
+
 .hero__name {
   font-weight: 900;
   font-size: 44px;
@@ -573,6 +601,22 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+@media screen and (min-width: 480px) {
+  .hero__name {
+    font-family: "Roboto";
+    font-size: 26px;
+    line-height: 1.62;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero__name {
+    font-family: "Roboto";
+    font-size: 26px;
+    line-height: 1.62;
+  }
 }
 
 .hero__btn {
@@ -600,11 +644,23 @@ body {
 
 .features-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .features-list .features-list__item {
   width: 270px;
+}
+
+@media screen and (max-width: 480px) {
+  .features-list .features-list__item {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .features-list {
+    flex-wrap: wrap;
+  }
 }
 
 .features-list__icon {
@@ -614,8 +670,26 @@ body {
   margin-bottom: 30px;
 }
 
-.features-list__item + .features-list__item {
+@media screen and (max-width: 480px) {
+  .features-list__icon {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .features-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.features-list__item:not(:first-child) {
   margin-left: 30px;
+}
+
+@media screen and (max-width: 480px) {
+  .features-list__item:not(:first-child) {
+    margin-left: 0;
+  }
 }
 
 .features-list__name {
