@@ -12,6 +12,24 @@
     background-size: cover;
     max-width: 1600px;
     margin: 0 auto;
+    @media screen and (min-width: 480px) {
+        background-image: linear-gradient(
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)
+            ),
+            url(../img/hero-image-mobile.jpg);
+        max-width: 100%;
+        height: auto;
+    }
+    @media screen and (min-width: 768px) {
+        background-image: linear-gradient(
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)
+            ),
+            url(../img/hero-image-tab.jpg);
+        max-width: 100%;
+        height: auto;
+    }
 
     &__name {
         font-weight: 900;
@@ -21,6 +39,16 @@
         letter-spacing: 0.06em;
         text-transform: uppercase;
         color: #ffffff;
+        @media screen and (min-width: 480px) {
+            font-family: "Roboto";
+            font-size: 26px;
+            line-height: 1.62;
+        }
+        @media screen and (min-width: 768px) {
+            font-family: "Roboto";
+            font-size: 26px;
+            line-height: 1.62;
+        }
     }
 
     &__btn {
